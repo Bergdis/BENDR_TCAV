@@ -1,0 +1,17 @@
+Configuratron:
+  use_only:
+    - mmidb
+#    - bci_iv_2a
+#    - ern
+#    - erpbci
+#    - sleep-edf
+  preload: True
+  sfreq: 256
+  deep1010:
+    return_mask: False
+
+encoder_weights: 'encoder.pt' #'..\EEG_Thesis\BENDR\encoder.pt'
+context_weights: 'contextualizer.pt' #'..\EEG_Thesis\BENDR\contextualizer.pt'
+
+datasets: !include  '.\BENDR\configs\downstream_datasets.yml' #'..\EEG_Thesis\BENDR\configs\downstream_datasets.yml'
+

@@ -1,0 +1,44 @@
+mmidb:
+  name: "Physionet MMIDB"
+  toplevel: 'configs_BENDR_Tcav\MMIfiles' # '..\EEG_Thesis\BENDR\configs\files'
+  tmin: 0
+  tlen: 6
+  data_max: 0.001 #ATH
+  data_min: -0.001 #ATH
+  events:
+    - T1
+    - T2
+  exclude_sessions:
+    - "*R0[!48].edf"  # equivalently "*R0[1235679].edf"
+    - "*R1[!2].edf"   # equivalently "*R1[134].edf"
+  exclude_people:
+    - S088
+    - S090
+    - S092
+    - S100
+  train_params:
+    epochs: 7
+    batch_size: 4 # I find this dataset likes small batch sizes
+  lr: 0.00001
+  folds: 5
+
+tuar:
+  name: "TUAR"
+  toplevel: 'configs_BENDR_Tcav\TUARfiles' # '..\EEG_Thesis\BENDR\configs\files'
+  #tmin: 0 #viljum ekki skipta upp í batches
+  #tlen: 6
+  data_max: 3276.7 #ATH
+  data_min: -1583.9258304722666 #ATH
+  #events:
+  #  - T1
+  #  - T2
+  # rename_channels:
+  #   CP3: "*C3P*"
+  #   CP4: "*C4P*"
+  #   FT9: "*T1*"
+  #   FT10: "*T2*"
+  train_params:
+    epochs: 7
+    batch_size: 4 # I find this dataset likes small batch sizes
+  lr: 0.00001
+  folds: 5

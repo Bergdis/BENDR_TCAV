@@ -1,0 +1,26 @@
+{
+    "os": "Windows-10-10.0.19041-SP0",
+    "python": "3.8.3",
+    "heartbeatAt": "2022-11-21T09:44:24.397537",
+    "startedAt": "2022-11-21T09:44:05.648490",
+    "docker": null,
+    "cpu_count": 4,
+    "cuda": null,
+    "args": [
+        "linear",
+        "--results-filename",
+        "results/linearDEBUG.xlsx"
+    ],
+    "state": "running",
+    "program": "c:/Users/Bex/Desktop/MSc. verkefni/BENDR_Code/EEG_Thesis/BENDR/downstream.py",
+    "codePath": "BENDR\\downstream.py",
+    "git": {
+        "remote": "https://github.com/Bergdis/EEG_Thesis.git",
+        "commit": "cd54bbf1169aad255896062e06614217cb2fe947"
+    },
+    "email": "65372344+Bergdis@users.noreply.github.com",
+    "root": "C:/Users/Bex/Desktop/MSc. verkefni/BENDR_Code/EEG_Thesis",
+    "host": "DESKTOP-V458KE2",
+    "username": "Bex",
+    "executable": "C:\\ProgramData\\Anaconda3\\python.exe"
+}
